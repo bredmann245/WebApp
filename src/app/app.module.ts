@@ -7,11 +7,18 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { CardsComponent } from './shared/cards/cards.component';
+import { ConfigService } from './config/config.service';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, FooterComponent, HeaderComponent, CardsComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    FooterComponent,
+    HeaderComponent,
+    CardsComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  providers: [ConfigService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
