@@ -8,6 +8,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { CardsComponent } from './shared/cards/cards.component';
 import { ConfigService } from './config/config.service';
+import { SubnavComponent } from './shared/subnav/subnav/subnav.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ConfigService } from './config/config.service';
     FooterComponent,
     HeaderComponent,
     CardsComponent,
+    SubnavComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [ConfigService],

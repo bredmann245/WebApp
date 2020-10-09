@@ -1,57 +1,42 @@
-.container-fluid {
-  overflow: scroll;
-  overflow-x: hidden;
-  scroll-behavior: auto;
+.background {
+  background: url("../../../assets/black-background.png") no-repeat center
+    center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   height: 100vh;
-  width: 100vw;
-  scroll-snap-type: mandatory;
-  scroll-snap-points-y: repeat(100vh);
-  scroll-snap-type: y mandatory;
-  scroll-snap-stop: always;
-  padding: 0 !important;
-}
-.head {
-  background-image: url("../../../assets/drawing.png");
-  background-position: left; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: contain; /* Resize the background image to cover the entire container */
-}
-
-.mid1 {
-  background-image: url("../../../assets/midSection1.png");
-  background-position: right; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: contain; /* Resize the background image to cover the entire container */
-}
-
-.mid2 {
-  background-image: url("../../../assets/midSection2.png");
-  background-position: right; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: contain; /* Resize the background image to cover the entire container */
-}
-
-.bottom {
-  background-image: url("../../../assets/bottom.png");
-  background-position: left; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: contain; /* Resize the background image to cover the entire container */
-}
-
-section {
-  padding: 0;
-  height: 100vh;
-  scroll-snap-align: start;
-  text-align: center;
   position: relative;
 }
-h1 {
+
+.welcomeText {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: center;
-  color: black;
-  width: 100%;
-  left: 0;
-  font-size: calc(1rem + 3vw);
+  top: 30%;
+  left: 150px;
+  color: white;
+}
+
+.software > h2 {
+  position: absolute;
+  top: 500px;
+  left: 0px;
+  font-size: 175px;
+  padding: 0;
+  margin: 0;
+}
+
+.developer > h2 {
+  position: absolute;
+  top: 650px;
+  right: 35px;
+  font-size: 50px;
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+
+.globe {
+  position: absolute;
+  right: 120px !important;
+  top: 5%;
 }
